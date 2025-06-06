@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "name": "lista_spesa",
+  "builds": [
+    "src": "mongodb.js",
+    "use": "@vercel/node",
+  ],
+  "routes": [
+    "src": "/(.*)",
+    "dest": "/mongodb.js",
+  ]
+}
